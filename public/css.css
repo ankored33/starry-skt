@@ -3,3 +3,7 @@
   height:100%;
   background-color:#0A0A2A;
 }
+
+.star {
+  position: absolute;
+}

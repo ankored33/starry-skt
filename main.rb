@@ -11,15 +11,19 @@ class StarrySky
   end
 
   def quantity
-    return 20
+    return 55
   end
 end
 
-test = StarrySky.new("test")
-test.dispName
-p test.quantity
+class Partner
+  def initialize(name)
+    @name = name
+  end
+end
 
 get "/" do
+  test = StarrySky.new("test")
+  @q = test.quantity
   erb :index
 
 end
